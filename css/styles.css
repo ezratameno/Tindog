@@ -1,31 +1,38 @@
-#title{
-  background-color: #FF4C68;
-  color: white;
-}
 
-h1{
+.big-heading{
   font-family: "Montserrat-Black";
   font-size: 3.5rem;
   line-height: 1.5;
 }
-h2{
+h1,h2,h3,h4,h5,h6{
   font-family: "Montserrat-bold";
-  font-size: 3rem;
-  line-height: 1.5;
+
 }
-h3{
-  font-family: "Montserrat-bold"
-}
+
 p{
   color: grey;
 }
 body{
   font-family: "Montserrat";
+  text-align: center;
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 7% 15%;
 }
+
+
+/* sections */
+.white-section{
+  background-color: white;
+
+}
+.colored-section
+{
+  background-color: #FF4C68;
+  color: white;
+}
+/* title section */
 
 /* Navigation Bar */
 .navbar{
@@ -46,6 +53,11 @@ body{
   font-family: "Montserrat-light"
 }
 
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+
+}
 /* Download Buttons */
 .download-button{
   margin: 5% 3% 5% 0;
@@ -54,15 +66,31 @@ body{
 .Title-image{
   width: 60%;
   transform: rotate(25deg);
-}
 
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+@media (max-width: 1028px) {
+  .Title-image{
+    position: static;
+    transform: rotate(0);
+  }
+  #title{
+    text-align: center;
+  }
+}
 /* Feature */
 #features{
   padding:7% 15%;
+
+}
+.features-Title{
+  font-size: 1.5rem;
 }
 .Feature-box{
-  text-align: center;
-  padding: 5%;
+  padding: 4.5%;
 }
 .Feature-icon{
   color: #EF8172;
@@ -74,9 +102,7 @@ body{
 
 /* Testimonials */
 #testimonials {
-  text-align: center;
   background-color: #EF8172;
-  color: white;
 }
 .testimonials-image{
   width: 10%;
@@ -87,14 +113,39 @@ body{
 .carousel-item{
   padding:7% 15%;
 }
+.testimonials-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
 
 /* press */
 #press{
   background-color: #EF8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* pricing */
+#pricing{
+  padding: 5%;
+
+}
+
+.pricing-col{
+  padding: 3% 2%;
+}
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* call to action */
+
+/* footer */
+
+.social-icon{
+  margin: 20px 10px;
 }
